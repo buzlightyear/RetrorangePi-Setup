@@ -1,14 +1,15 @@
 RetroPie-Setup
 ==============
 It's the forked https://github.com/harryzimm/RetroPie-Setup with some changes under scripts.
+
 SCRIPT WORKS ONLY FOR DEVICES LISTED HERE http://www.retrorangepi.org/
 
 General Usage
 -------------
 
-Shell script to setup the Raspberry Pi, ODroid-C1 or a PC running Ubuntu with many emulators and games, using EmulationStation as the graphical front end. Bootable pre-made images for the Raspberry Pi are available for those that want a ready to go system, downloadable from the releases section of GitHub or via our website at https://retropie.org.uk
+Shell script to setup many emulators and games, using EmulationStation as the graphical front end. Bootable pre-made images for the devices listed above are available for those that want a ready to go system, downloadable from the releases section of GitHub or via our website at http://www.retrorangepi.org/
 
-This script is designed for use on Raspbian on the Rasperry Pi, or Ubuntu on the ODroid-C1 or a PC.
+This script is designed for use on devices listed above.
 
 To run the RetroPie Setup Script make sure that your APT repositories are up-to-date and that Git is installed:
 
