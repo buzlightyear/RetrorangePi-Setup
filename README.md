@@ -1,6 +1,7 @@
 RetroPie-Setup
 ==============
-It's the original https://github.com/harryzimm/RetroPie-Setup with some changes under scripts.
+It's the forked https://github.com/harryzimm/RetroPie-Setup with some changes under scripts.
+SCRIPT WORKS ONLY FOR DEVICES LISTED HERE http://www.retrorangepi.org/
 
 General Usage
 -------------
@@ -21,7 +22,7 @@ Then you can download the latest RetroPie setup script with
 
 ```shell
 cd
-git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+git clone --depth=1 https://github.com/buzlightyear/RetroPie-Setup.git
 ```
 
 The script is executed with 
@@ -49,4 +50,4 @@ You can find useful information about several components or for several frequent
 Thanks
 ------
 
-This script just simplifies the usage of the great works of many other people that enjoy the spirit of retrogaming. Many thanks go to them!
+This script just simplifies the 
