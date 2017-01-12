@@ -1,5 +1,6 @@
 RetroPie-Setup
 ==============
+It's the original https://github.com/harryzimm/RetroPie-Setup with some changes under scripts.
 
 General Usage
 -------------
