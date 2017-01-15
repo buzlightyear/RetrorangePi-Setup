@@ -33,7 +33,6 @@ function _video_exts_splashscreen() {
 }
 
 function depends_splashscreen() {
-    #apt-get remove -y mpv clean install missing some libraries for mpv, so remove and reinstall it
     getDepends fbi mpv libavdevice55 libavfilter5 libva-glx1
 }
 
