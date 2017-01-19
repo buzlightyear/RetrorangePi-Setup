@@ -33,7 +33,7 @@ function _video_exts_splashscreen() {
 }
 
 function depends_splashscreen() {
-    getDepends fbi mpv
+    getDepends fbi mpv libavdevice55 libavfilter5 libva-glx1
 }
 
 function install_bin_splashscreen() {
