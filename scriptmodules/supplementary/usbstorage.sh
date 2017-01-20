@@ -22,6 +22,7 @@ mkdir /mnt/usb
 function remove_fstab(){
 if grep -q "/mnt/usb" "/etc/fstab"; then
 sed -i "s/UUID=.*/ /g" /etc/fstab
+systemctl disable bind.service
 printMsgs "dialog" "Usb removed"
 else
 printMsgs "dialog" "Nothing to remove"
