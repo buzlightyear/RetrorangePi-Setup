@@ -53,6 +53,7 @@ directory mask = 0755
 force user = pi
 _EOF_
 fi
+/etc/init.d/smbd restart
 } 
 
 function set_usb(){
