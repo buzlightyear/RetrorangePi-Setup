@@ -74,9 +74,9 @@ fi
 function write_fstab(){
 
 if grep -q "/mnt/usb" "/etc/fstab"; then
-sed -i "s/UUID=.*/UUID=$uuid \/mnt\/usb $fs/g" /etc/fstab
+sed -i "s/UUID=.*/UUID=$uuid \/mnt\/usb $fs noauto/g" /etc/fstab
 else
-echo "UUID=$uuid /mnt/usb $fs" >> /etc/fstab
+echo "UUID=$uuid /mnt/usb $fs noauto" >> /etc/fstab
 fi
 }
 
