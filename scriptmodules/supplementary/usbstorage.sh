@@ -79,8 +79,8 @@ printMsgs "dialog" "No usb drive detected"
 return
 fi
 	fs=$(eval $(blkid /dev/$usb_path1 | awk '{print $3}'); echo $TYPE)
-	umount /dev/$usb_path1
-	umount /mnt/usb
+	umount /dev/$usb_path1 > /dev/null 2>&1 || /bin/true
+	umount /mnt/usb > /dev/null 2>&1 || /bin/true
 	mount -t $fs -o nonempty /dev/$usb_path1 /mnt/usb
 	uuid=$(blkid /dev/$usb_path1 -sUUID | cut -d'"' -f2)
     usb_path=/mnt/usb
