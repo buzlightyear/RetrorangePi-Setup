@@ -16,6 +16,7 @@ rp_module_section="config"
 function install_uniscraper() {
 cp /etc/samba/smb.conf /etc/samba/smb.conf.unibak
 cp /home/pi/RetroPie-Setup/scriptmodules/supplementary/uniscraper/smb.conf /etc/samba/smb.conf 
+/etc/init.d/smbd restart
 printMsgs "dialog" "Uniscraper config succesfully installed"
 }
 function manually(){
