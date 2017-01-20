@@ -57,7 +57,7 @@ fi
 /etc/init.d/smbd restart
 } 
 function write_fstab(){
-mount -t $fs /dev/$usb_path1 /mnt/usb
+mount -t $fs -o nonempty /dev/$usb_path1 /mnt/usb
 chown -R -h pi:pi /mnt/usb/retropie/*
 cp /home/pi/RetroPie-Setup/scriptmodules/supplementary/usbstorage/bind.sh /etc/init.d/bind.sh
 chmod +x /etc/init.d/bind.sh
