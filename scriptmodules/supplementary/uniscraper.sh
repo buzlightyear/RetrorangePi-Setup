@@ -26,7 +26,7 @@ mv /etc/samba/smb.conf.unibak /etc/samba/smb.conf
 printMsgs "dialog" "Uniscraper config removed"
 return
 }
-function gui_usbstorage(){
+function gui_uniscraper(){
 while true; do
 local cmd=(dialog --backtitle "$__backtitle" --menu "Choose an option. $user" 22 76 16)
 local options=(
