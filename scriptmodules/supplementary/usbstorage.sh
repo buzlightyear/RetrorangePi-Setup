@@ -112,7 +112,7 @@ for dev in $devs;
 do dev=${dev##*\/};
 mount /dev/$dev /media/usb$i
 dim=$(df -Ph /dev/$dev | tail -1 | awk '{print $4}')
-options+=("$dev" "Usb$i+1 Size $dim")
+options+=("$dev" "Usb$i Size $dim")
 ((i++)) 
 done
 
